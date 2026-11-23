@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>24 Kasım Öğretmenler Günü Kutlu Olsun ✨</title>
+
+  <!-- Google Fonts: Şiirsel başlıklar için Cormorant Garamond & Playfair Display, akıcı metinler için Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            midnight: '#090d16',
+            plum: '#1a1026',
+            gold: {
+              light: '#ffe4a3',
+              DEFAULT: '#f6c768',
+              dark: '#c9933b',
+            },
+            rosegold: {
+              light: '#f7b8c4',
+              DEFAULT: '#ea8c9d',
+              dark: '#b8576a',
+            },
+            ivory: '#fcf7ee',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', '"Playfair Display"', 'Georgia', 'serif'],
+            display: ['"Playfair Display"', '"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    /* Özel Atmosferik Stiller ve Animasyonlar */
+    :root {
+      --bg-midnight: #090d16;
+      --bg-plum: #1a1026;
+      --gold: #f6c768;
+      --gold-light: #ffe4a3;
+      --rose-gold: #ea8c9d;
+      --ivory: #fcf7ee;
+    }
+
+    body {
+      background-color: var(--bg-midnight);
+      background-image:
+        radial-gradient(circle at 18% 15%, rgba(234, 140, 157, 0.14) 0%, transparent 42%),
+        radial-gradient(circle at 82% 28%, rgba(246, 199, 104, 0.12) 0%, transparent 45%),
+        radial-gradient(circle at 50% 78%, rgba(49, 24, 72, 0.55) 0%, rgba(9, 13, 22, 0.96) 75%);
+      color: var(--ivory);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    /* Altın Işıltılı Hareketli Metin Gradyanı */
+    .gold-shimmer-text {
+      background: linear-gradient(
+        110deg,
+        #e2a84b 0%,
+        #ffe4a3 25%,
+        #ea8c9d 48%,
+        #ffe4a3 72%,
+        #d99b38 100%
+      );
+      background-size: 240% auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: goldShimmer 6s linear infinite;
+    }
+
+    @keyframes goldShimmer {
+      0% { background-position: 0% center; }
+      100% { background-position: 240% center; }
+    }
+
+    /* Cam Efekti (Glassmorphism) ve Altın Filigran Çerçeveler */
+    .glass-luxe {
+      background: linear-gradient(
+        145deg,
+        rgba(26, 16, 38, 0.68) 0%,
+        rgba(13, 18, 32, 0.78) 100%
+      );
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(246, 199, 104, 0.25);
+      box-shadow:
+        0 20px 55px -15px rgba(0, 0, 0, 0.75),
+        inset 0 1px 1px rgba(255, 228, 163, 0.18);
+    }
+
+    .glass-pill {
+      background: rgba(20, 15, 32, 0.72);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(246, 199, 104, 0.28);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+    }
+
+    /* Açılış Sahnesi Balmumu Mühür Efektleri */
+    @keyframes sealPulse {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow:
+          0 0 35px rgba(246, 199, 104, 0.45),
+          0 0 80px rgba(234, 140, 157, 0.25),
+          inset 0 0 22px rgba(255, 228, 163, 0.55);
+      }
+      50% {
+        transform: scale(1.045);
+        box-shadow:
+          0 0 55px rgba(246, 199, 104, 0.72),
+          0 0 115px rgba(234, 140, 157, 0.42),
+          inset 0 0 32px rgba(255, 228, 163, 0.8);
+      }
+    }
+
+    @keyframes slowRotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .wax-seal-orb {
+      background: radial-gradient(circle at 32% 28%, #ffe4a3 0%, #e5aa46 38%, #9e6519 82%, #6d4009 100%);
+      animation: sealPulse 3.6s ease-in-out infinite;
+    }
+
+    .celestial-rays {
+      animation: slowRotate 42s linear infinite;
+    }
+
+    /* Çiçek Sallanma ve Açılma (Bloom) Animasyonları */
+    @keyframes gentleSway {
+      0%, 100% { transform: rotate(-2.5deg) translateY(0px); }
+      50% { transform: rotate(2.5deg) translateY(-4px); }
+    }
+
+    .flower-sway {
+      animation: gentleSway 4.8s ease-in-out infinite;
+      transform-origin: bottom center;
+    }
+
+    .flower-card {
+      transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+                  border-color 0.45s ease,
+                  box-shadow 0.45s ease;
+    }
+
+    .flower-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(246, 199, 104, 0.52);
+      box-shadow: 0 22px 45px -12px rgba(246, 199, 104, 0.18);
+    }
+
+    .flower-svg-wrapper {
+      transition: transform 0.75s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.6s ease;
+    }
+
+    .flower-card.bloomed .flower-svg-wrapper {
+      transform: scale(1.16) rotate(4deg);
+      filter: drop-shadow(0 0 22px rgba(246, 199, 104, 0.65));
+    }
+
+    .flower-card.bloomed {
+      border-color: rgba(246, 199, 104, 0.68);
+      background: linear-gradient(
+        155deg,
+        rgba(46, 25, 58, 0.82) 0%,
+        rgba(20, 22, 38, 0.88) 100%
+      );
+      box-shadow:
+        0 18px 45px -10px rgba(246, 199, 104, 0.25),
+        inset 0 0 28px rgba(246, 199, 104, 0.12);
+    }
+
+    /* Ses Ekolayzır Çubukları */
+    @keyframes eqBar {
+      0%, 100% { height: 4px; }
+      50% { height: 14px; }
+    }
+    .eq-playing .eq-1 { animation: eqBar 0.9s ease-in-out infinite; }
+    .eq-playing .eq-2 { animation: eqBar 0.7s ease-in-out 0.2s infinite; }
+    .eq-playing .eq-3 { animation: eqBar 1.05s ease-in-out 0.35s infinite; }
+
+    /* Özel Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #090d16;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #c9933b, #ea8c9d);
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-gold/30 selection:text-gold-light">
+
+  <!-- TAM EKRAN İNTERAKTİF ARKA PLAN TUVALİ (Bokeh, Gül Yaprakları, Yıldız Tozu, Dilek Fenerleri & Havai Fişekler) -->
+  <canvas id="celebrationCanvas" class="fixed inset-0 w-full h-full pointer-events-none z-10"></canvas>
+
+  <!-- ===================================================================== -->
+  <!-- 1. AÇILIŞ SAHNESİ (GRAND INTRO ENVELOPE / WAX SEAL)                   -->
+  <!-- ===================================================================== -->
+  <div id="introOverlay"
+       class="fixed inset-0 z-50 flex flex-col items-center justify-center px-6 text-center transition-all duration-1000 ease-out"
+       style="background: radial-gradient(circle at center, #241436 0%, #0d111d 55%, #06080f 100%);">
+
+    <!-- Arka Plan Dönen Göksel Işık Hüzmeleri -->
+    <div class="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none opacity-35">
+      <svg class="w-[620px] h-[620px] sm:w-[820px] sm:h-[820px] celestial-rays" viewBox="0 0 400 400" fill="none">
+        <defs>
+          <radialGradient id="rayGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ffe4a3" stop-opacity="0.7" />
+            <stop offset="65%" stop-color="#ea8c9d" stop-opacity="0.18" />
+            <stop offset="100%" stop-color="#090d16" stop-opacity="0" />
+          </radialGradient>
+        </defs>
+        <circle cx="200" cy="200" r="190" stroke="url(#rayGrad)" stroke-width="0.6" stroke-dasharray="4 6" />
+        <circle cx="200" cy="200" r="152" stroke="url(#rayGrad)" stroke-width="0.8" />
+        <g stroke="url(#rayGrad)" stroke-width="0.7">
+          <line x1="200" y1="5" x2="200" y2="395" />
+          <line x1="5" y1="200" x2="395" y2="200" />
+          <line x1="62" y1="62" x2="338" y2="338" />
+          <line x1="338" y1="62" x2="62" y2="338" />
+          <line x1="102" y1="31" x2="298" y2="369" />
+          <line x1="298" y1="31" x2="102" y2="369" />
+          <line x1="31" y1="102" x2="369" y2="298" />
+          <line x1="369" y1="102" x2="31" y2="298" />
+        </g>
+      </svg>
+    </div>
+
+    <!-- Üst Şiirsel Başlık -->
+    <div class="relative z-10 max-w-lg mx-auto space-y-6">
+      <p class="text-xs sm:text-sm uppercase tracking-[0.34em] text-gold-light/80 font-medium">
+        Özel Bir Kutlama Zarfı
+      </p>
+
+      <!-- Altın Balmumu Mühür Amblemi ("24 Kasım" İşlemeli) -->
+      <div class="relative mx-auto w-44 h-44 sm:w-52 sm:h-52 flex items-center justify-center my-4">
+        <!-- Dış Dantel Halka -->
+        <div class="absolute inset-0 rounded-full border border-gold/40 animate-ping" style="animation-duration: 3.4s;"></div>
+        <div class="absolute inset-2 rounded-full border border-dashed border-gold-light/50"></div>
+
+        <!-- Ana Balmumu Mühür -->
+        <button id="waxSealClickArea"
+                type="button"
+                aria-label="Sürprizi Aç"
+                class="wax-seal-orb relative w-36 h-36 sm:w-44 sm:h-44 rounded-full flex flex-col items-center justify-center cursor-pointer border-2 border-gold-light/80 focus:outline-none group transition-transform duration-300 hover:scale-105">
+          <!-- İç Kabartma Halka -->
+          <div class="absolute inset-2.5 rounded-full border border-[#6d4009]/45 pointer-events-none"></div>
+          <div class="absolute inset-3.5 rounded-full border border-gold-light/60 pointer-events-none"></div>
+
+          <!-- Küçük Kalp & Tüy Simgesi -->
+          <svg class="w-6 h-6 text-[#4a2803] mb-1 opacity-85 group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+
+          <span class="font-serif italic font-bold text-2xl sm:text-3xl text-[#3b1f02] tracking-wide drop-shadow-[0_1px_0_rgba(255,244,210,0.75)]">
+            24 Kasım
+          </span>
+          <span class="text-[10px] uppercase tracking-[0.25em] font-semibold text-[#4e2b04]/90 mt-0.5">
+            Sevgiyle
+          </span>
+        </button>
+      </div>
+
+      <h2 class="font-serif italic text-2xl sm:text-4xl text-ivory/95 leading-snug">
+        Kalbinin ışığıyla dünyayı güzelleştiren <span class="text-gold-light">canım ablama</span> küçük bir armağan...
+      </h2>
+
+      <div class="pt-3">
+        <button id="openSurpriseBtn"
+                type="button"
+                class="relative inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full font-medium text-base sm:text-lg text-midnight bg-gradient-to-r from-gold-light via-gold to-rosegold-light shadow-[0_10px_35px_rgba(246,199,104,0.45)] hover:shadow-[0_14px_45px_rgba(246,199,104,0.7)] hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer">
+          <span class="font-semibold tracking-wide">Sürprizi Aç ✨</span>
+        </button>
+      </div>
+
+      <p class="text-xs text-ivory/50 pt-1">
+        (Sürprizi açtığınızda hafif bir kutlama melodisi eşlik edecektir)
+      </p>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- 2. ÜST YÜZEN KONTROL ÇUBUĞU (İSİM ÖZELLEŞTİRME & SES KONTROLÜ)         -->
+  <!-- ===================================================================== -->
+  <header class="sticky top-0 z-30 w-full px-4 sm:px-8 pt-4 pb-2">
+    <nav class="max-w-6xl mx-auto glass-pill rounded-full px-4 sm:px-6 py-2.5 flex items-center justify-between gap-2">
+      <!-- Sol Rozet -->
+      <a href="#hero" class="flex items-center gap-2.5 group focus:outline-none">
+        <span class="w-8 h-8 rounded-full bg-gradient-to-br from-gold-light to-rosegold flex items-center justify-center text-midnight font-serif font-bold text-sm shadow-md group-hover:rotate-12 transition-transform">
+          24
+        </span>
+        <span class="hidden sm:inline-block font-serif italic text-lg text-gold-light tracking-wide">
+          Öğretmenler Günü Hatırası
+        </span>
+      </a>
+
+      <!-- Sağ Eylem Düğmeleri -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Canlı İsim Özelleştirme Butonu -->
+        <button id="openNameModalBtn"
+                type="button"
+                class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium text-gold-light bg-gold/10 hover:bg-gold/20 border border-gold/35 transition-all cursor-pointer active:scale-95">
+          <span>✏️ Ablanın Adını Yaz</span>
+        </button>
+
+        <!-- Ambiyans Melodi Aç/Kapat Butonu -->
+        <button id="soundToggleBtn"
+                type="button"
+                aria-label="Müziği Aç veya Kapat"
+                class="inline-flex items-center gap-2 px-3.5 py-2 rounded-full text-xs sm:text-sm font-medium text-ivory/90 bg-white/5 hover:bg-white/10 border border-white/15 transition-all cursor-pointer active:scale-95">
+          <div id="eqBars" class="flex items-end gap-0.5 h-3.5 w-3.5 justify-center">
+            <span class="eq-1 w-0.5 h-1.5 bg-gold rounded-full"></span>
+            <span class="eq-2 w-0.5 h-2.5 bg-rosegold rounded-full"></span>
+            <span class="eq-3 w-0.5 h-1.5 bg-gold-light rounded-full"></span>
+          </div>
+          <span id="soundStatusText" class="hidden md:inline">Melodi Kapalı</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===================================================================== -->
+  <!-- ANA İÇERİK AKIŞI                                                      -->
+  <!-- ===================================================================== -->
+  <main id="mainContent" class="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-24 space-y-24 sm:space-y-32">
+
+    <!-- =================================================================== -->
+    <!-- 3. HERO BÖLÜMÜ (BÜYÜLEYİCİ KARŞILAMA)                                -->
+    <!-- =================================================================== -->
+    <section id="hero" class="pt-10 sm:pt-16 text-center flex flex-col items-center">
+      <!-- Üst Zarif Etiket -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rosegold/10 border border-rosegold/30 text-rosegold-light text-xs sm:text-sm tracking-[0.2em] uppercase mb-6">
+        <span>✦</span>
+        <span>24 Kasım Öğretmenler Günü</span>
+        <span>✦</span>
+      </div>
+
+      <!-- Işıltılı Altın Gradyan Başlık -->
+      <h1 class="font-serif italic font-bold text-4xl sm:text-6xl lg:text-7xl leading-[1.14] tracking-tight max-w-4xl mx-auto drop-shadow-[0_6px_30px_rgba(246,199,104,0.2)]">
+        <span class="gold-shimmer-text">24 Kasım Öğretmenler Günü Kutlu Olsun,</span>
+        <br />
+        <span id="heroSisterName" class="text-ivory underline decoration-gold/40 decoration-1 underline-offset-8 mt-2 inline-block">
+          Canım Ablam
+        </span>
+      </h1>
+
+      <!-- Duygusal Alt Başlık -->
+      <p class="mt-6 sm:mt-8 max-w-2xl mx-auto text-base sm:text-xl text-ivory/80 font-light leading-relaxed">
+        Hem ailemizin yolunu aydınlatan en parlak yıldız, hem de dokunduğu her öğrencinin kalbine umut, bilgi ve sevgi eken eşsiz bir eğitimcisin. İyi ki varsın, iyi ki benim ablamsın.
+      </p>
+
+      <!-- Mustafa Kemal Atatürk Sözü Kartı -->
+      <div class="mt-10 sm:mt-12 w-full max-w-2xl glass-luxe rounded-3xl p-6 sm:p-8 relative overflow-hidden group">
+        <!-- Köşe Süslemeleri -->
+        <div class="absolute top-3 left-3 w-5 h-5 border-t-2 border-l-2 border-gold/50 rounded-tl-lg"></div>
+        <div class="absolute top-3 right-3 w-5 h-5 border-t-2 border-r-2 border-gold/50 rounded-tr-lg"></div>
+        <div class="absolute bottom-3 left-3 w-5 h-5 border-b-2 border-l-2 border-gold/50 rounded-bl-lg"></div>
+        <div class="absolute bottom-3 right-3 w-5 h-5 border-b-2 border-r-2 border-gold/50 rounded-br-lg"></div>
+
+        <p class="font-serif italic text-xl sm:text-2xl md:text-3xl text-gold-light leading-relaxed">
+          “Öğretmenler! Yeni nesil sizin eseriniz olacaktır.”
+        </p>
+        <div class="mt-4 flex items-center justify-center gap-3 text-xs sm:text-sm uppercase tracking-[0.25em] text-ivory/70">
+          <span class="h-px w-8 bg-gold/40"></span>
+          <span>Mustafa Kemal Atatürk</span>
+          <span class="h-px w-8 bg-gold/40"></span>
+        </div>
+      </div>
+
+      <!-- Aşağı Kaydırma İpucu -->
+      <a href="#mektup" class="mt-12 inline-flex flex-col items-center gap-2 text-xs uppercase tracking-[0.25em] text-gold-light/70 hover:text-gold-light transition-colors">
+        <span>Sana Yazdığım Mektubu Oku</span>
+        <svg class="w-5 h-5 animate-bounce text-gold" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </a>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- 4. KALPTEN GELEN MEKTUP (HEARTFELT TRIBUTE LETTER)                  -->
+    <!-- =================================================================== -->
+    <section id="mektup" class="scroll-mt-24">
+      <div class="glass-luxe rounded-[2rem] p-7 sm:p-12 md:p-16 relative overflow-hidden">
+        <!-- Arka Plan Yumuşak Altın Hare -->
+        <div class="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-gold/10 blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -left-24 w-72 h-72 rounded-full bg-rosegold/10 blur-3xl pointer-events-none"></div>
+
+        <!-- Mektup Üst Başlık -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-6 border-b border-gold/20">
+          <div>
+            <span class="text-xs uppercase tracking-[0.3em] text-rosegold-light">Kalpten Satırlar</span>
+            <h2 class="font-serif italic text-3xl sm:text-4xl text-gold-light mt-1">
+              Sevgili <span id="letterSisterName">Canım Ablam</span>,
+            </h2>
+          </div>
+          <span class="font-serif italic text-ivory/60 text-base sm:text-lg">
+            24 Kasım • Sonsuz Minnetle
+          </span>
+        </div>
+
+        <!-- Mektup İçeriği -->
+        <div class="mt-8 space-y-5 text-base sm:text-lg text-ivory/90 font-light leading-[1.9]">
+          <p>
+            Hayatımın ilk günlerinden beri bana hem sıcacık bir yuva hem de ilk öğretmen olan <strong class="font-medium text-gold-light" id="letterInlineName">canım ablam</strong>; bugün sadece takvimlerdeki özel bir günü değil, senin dünyaya kattığın o eşsiz güzelliği kutluyoruz.
+          </p>
+          <p>
+            Bir sınıfa adım attığında gözlerinin nasıl parladığını, öğrencilerinin her birine kendi evladın gibi şefkatle yaklaştığını, en yorgun anlarında bile sabrından ve güler yüzünden asla ödün vermediğini görmek bana her zaman tarifsiz bir gurur veriyor. Sen yalnızca ders anlatmıyor; genç yüreklere cesaret, dürüstlük, merhamet ve hayal kurma gücü aşılıyorsun.
+          </p>
+          <p>
+            Tıpkı benim elimden tutup bana hayatı öğrettiğin gibi, bugün de yüzlerce çocuğun hayatında silinmeyecek izler bırakıyorsun. Onların yarınlara umutla bakan gözlerinde senin emeğin, senin ışığın var.
+          </p>
+          <p class="font-serif italic text-xl sm:text-2xl text-rosegold-light pt-2">
+            “Bir öğretmenin yaktığı ışık hiç sönmez; nesilden nesile büyüyerek dünyayı aydınlatır.”
+          </p>
+          <p>
+            Bitmeyen sabrın, sıcacık ablalığın ve kutsal emeğin için sana binlerce kez teşekkür ederim. Öğretmenler Günün kutlu olsun; kalbinin güzelliği hep seninle olsun.
+          </p>
+        </div>
+
+        <!-- Mektup İmza Alanı -->
+        <div class="mt-10 pt-6 border-t border-gold/15 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+          <div class="text-xs sm:text-sm text-ivory/60">
+            Her zaman seninle gurur duyan,
+          </div>
+          <div class="text-right">
+            <p class="font-serif italic text-2xl sm:text-3xl text-gold-light">
+              Seni Çok Seven Kardeşin ❤️
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- 5. İNTERAKTİF SEVGİ & ÇİÇEK BUKETİ (INTERACTIVE BLOOMING GARDEN)     -->
+    <!-- =================================================================== -->
+    <section id="buket" class="scroll-mt-24">
+      <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
+        <span class="text-xs uppercase tracking-[0.3em] text-gold-light/80">Sana Özel Dijital Bahçe</span>
+        <h2 class="font-serif italic font-bold text-3xl sm:text-5xl text-ivory mt-2">
+          Senin İçin Açan <span class="gold-shimmer-text">Sevgi Buketi</span>
+        </h2>
+        <p class="mt-3 text-sm sm:text-base text-ivory/75 font-light">
+          Her bir çiçeğe dokunarak sana olan minnetimi ve sevgimi anlatan özel notları açabilirsin.
+        </p>
+
+        <button id="bloomAllBtn"
+                type="button"
+                class="mt-5 inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium text-gold-light bg-gold/10 hover:bg-gold/20 border border-gold/35 transition-all cursor-pointer active:scale-95">
+          <span>🌸 Tüm Çiçekleri Aç</span>
+        </button>
+      </div>
+
+      <!-- 6 Çiçeklik Grid -->
+      <div id="flowerGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Çiçek 1: Kırmızı Gül -->
+        <button type="button"
+                data-flower-index="0"
+                class="flower-card glass-luxe rounded-3xl p-6 text-center flex flex-col items-center justify-between cursor-pointer focus:outline-none group">
+          <div class="flower-svg-wrapper flower-sway w-28 h-28 flex items-center justify-center my-2">
+            <!-- Sanatsal Kırmızı Gül SVG -->
+            <svg viewBox="0 0 120 120" class="w-24 h-24 overflow-visible">
+              <defs>
+                <radialGradient id="roseGrad1" cx="40%" cy="35%" r="65%">
+                  <stop offset="0%" stop-color="#ff9eb5" />
+                  <stop offset="45%" stop-color="#e11d48" />
+                  <stop offset="100%" stop-color="#7f1029" />
+                </radialGradient>
+                <linearGradient id="stemGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#4ade80" />
+                  <stop offset="100%" stop-color="#15803d" />
+                </linearGradient>
+              </defs>
+              <!-- Sap & Yapraklar -->
+              <path d="M60 66 Q58 92 60 114" stroke="url(#stemGrad)" stroke-width="3.5" stroke-linecap="round" fill="none" />
+              <path d="M60 90 C44 82, 36 90, 44 98 C50 103, 58 96, 60 90 Z" fill="#22c55e" opacity="0.85" />
+              <path d="M60 82 C76 74, 84 82, 76 90 C70 95, 62 88, 60 82 Z" fill="#16a34a" opacity="0.9" />
+              <!-- Gül Yaprak Katmanları -->
+              <circle cx="60" cy="46" r="26" fill="url(#roseGrad1)" opacity="0.88" />
+              <path d="M36 44 C34 24, 62 18, 60 42 C58 20, 86 24, 84 44 C88 64, 64 72, 60 68 C56 72, 32 64, 36 44 Z" fill="url(#roseGrad1)" />
+              <path d="M44 45 C44 30, 76 30, 76 45 C76 58, 60 64, 60 64 C60 64, 44 58, 44 45 Z" fill="#fb7185" opacity="0.65" />
+              <path d="M51 44 C51 36, 69 36, 69 44 C69 51, 60 54, 60 54 C60 54, 51 51, 51 44 Z" fill="#ffe4e6" opacity="0.7" />
+              <circle cx="60" cy="44" r="4" fill="#ffe4a3" />
+            </svg>
+          </div>
+          <div class="mt-2">
+            <span class="text-xs uppercase tracking-[0.2em] text-rosegold-light">Kırmızı Gül</span>
+            <h3 class="font-serif italic text-2xl text-gold-light mt-1">Sonsuz Sabrın İçin</h3>
+            <p class="flower-note hidden mt-3 text-sm text-ivory/85 font-light leading-relaxed border-t border-gold/20 pt-3">
+              En zor anlarda bile sevgiyle dinlediğin, her soruya bıkmadan ışık tuttuğun ve şefkatle yol gösterdiğin için...
+            </p>
+            <span class="flower-hint inline-block mt-3 text-xs text-ivory/50 group-hover:text-gold-light transition-colors">
+              Dokun ve Çiçeği Aç ✨
+            </span>
+          </div>
+        </button>
+
+        <!-- Çiçek 2: Beyaz Zambak -->
+        <button type="button"
+                data-flower-index="1"
+                class="flower-card glass-luxe rounded-3xl p-6 text-center flex flex-col items-center justify-between cursor-pointer focus:outline-none group">
+          <div class="flower-svg-wrapper flower-sway w-28 h-28 flex items-center justify-center my-2" style="animation-delay: 0.6s;">
+            <!-- Sanatsal Beyaz Zambak SVG -->
+            <svg viewBox="0 0 120 120" class="w-24 h-24 overflow-visible">
+              <defs>
+                <radialGradient id="lilyGrad" cx="50%" cy="50%" r="55%">
+                  <stop offset="0%" stop-color="#fde68a" />
+                  <stop offset="35%" stop-color="#fffbeb" />
+                  <stop offset="100%" stop-color="#e2e8f0" />
+                </radialGradient>
+              </defs>
+              <path d="M60 66 L60 114" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round" />
+              <path d="M60 88 C45 84, 38 92, 48 98 C54 101, 59 94, 60 88 Z" fill="#22c55e" opacity="0.8" />
+              <!-- 6 Yapraklı Zambak -->
+              <g transform="translate(60,46)">
+                <ellipse cx="0" cy="-20" rx="9" ry="22" fill="url(#lilyGrad)" transform="rotate(0)" />
+                <ellipse cx="0" cy="-20" rx="9" ry="22" fill="url(#lilyGrad)" transform="rotate(60)" />
+                <ellipse cx="0" cy="-20" rx="9" ry="22" fill="url(#lilyGrad)" transform="rotate(120)" />
+                <ellipse cx="0" cy="-20" rx="9" ry="22" fill="url(#lilyGrad)" transform="rotate(180)" />
+                <ellipse cx="0" cy="-20" rx="9" ry="22" fill="url(#lilyGrad)" transform="rotate(240)" />
+                <ellipse cx="0" cy="-20" rx="9" ry="22" fill="url(#lilyGrad)" transform="rotate(300)" />
+                <!-- Altın Polenler -->
+                <line x1="0" y1="0" x2="-8" y2="-10" stroke="#f59e0b" stroke-width="1.5" />
+                <line x1="0" y1="0" x2="8" y2="-10" stroke="#f59e0b" stroke-width="1.5" />
+                <line x1="0" y1="0" x2="0" y2="-13" stroke="#f59e0b" stroke-width="1.5" />
+                <circle cx="-8" cy="-10" r="2.2" fill="#fbbf24" />
+                <circle cx="8" cy="-10" r="2.2" fill="#fbbf24" />
+                <circle cx="0" cy="-13" r="2.2" fill="#fbbf24" />
+              </g>
+            </svg>
+          </div>
+          <div class="mt-2">
+            <span class="text-xs uppercase tracking-[0.2em] text-ivory/75">Beyaz Zambak</span>
+            <h3 class="font-serif italic text-2xl text-gold-light mt-1">Yol Gösteren Işığın İçin</h3>
+            <p class="flower-note hidden mt-3 text-sm text-ivory/85 font-light leading-relaxed border-t border-gold/20 pt-3">
+              Karanlıkta kalan düşüncelere berraklık, kararsız adımlara cesaret veren tertemiz bilgeliğin için...
+            </p>
+            <span class="flower-hint inline-block mt-3 text-xs text-ivory/50 group-hover:text-gold-light transition-colors">
+              Dokun ve Çiçeği Aç ✨
+            </span>
+          </div>
+        </button>
+
+        <!-- Çiçek 3: Mor Orkide -->
+        <button type="button"
+                data-flower-index="2"
+                class="flower-card glass-luxe rounded-3xl p-6 text-center flex flex-col items-center justify-between cursor-pointer focus:outline-none group">
+          <div class="flower-svg-wrapper flower-sway w-28 h-28 flex items-center justify-center my-2" style="animation-delay: 1.1s;">
+            <!-- Sanatsal Mor Orkide SVG -->
+            <svg viewBox="0 0 120 120" class="w-24 h-24 overflow-visible">
+              <defs>
+                <radialGradient id="orchidGrad" cx="50%" cy="50%" r="60%">
+                  <stop offset="0%" stop-color="#f5d0fe" />
+                  <stop offset="50%" stop-color="#c084fc" />
+                  <stop offset="100%" stop-color="#6b21a8" />
+                </radialGradient>
+              </defs>
+              <path d="M60 66 Q63 90 60 114" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round" fill="none" />
+              <path d="M60 86 C75 80, 82 88, 72 95 C66 99, 61 92, 60 86 Z" fill="#16a34a" opacity="0.85" />
+              <g transform="translate(60,46)">
+                <ellipse cx="0" cy="-18" rx="11" ry="18" fill="url(#orchidGrad)" />
+                <ellipse cx="-18" cy="-4" rx="17" ry="11" fill="url(#orchidGrad)" transform="rotate(-15 -18 -4)" />
+                <ellipse cx="18" cy="-4" rx="17" ry="11" fill="url(#orchidGrad)" transform="rotate(15 18 -4)" />
+                <ellipse cx="-12" cy="15" rx="11" ry="15" fill="#a855f7" transform="rotate(25 -12 15)" />
+                <ellipse cx="12" cy="15" rx="11" ry="15" fill="#a855f7" transform="rotate(-25 12 15)" />
+                <!-- Orkide Merkezi -->
+                <path d="M-7 2 C-7 -6, 7 -6, 7 2 C7 10, 0 14, 0 14 C0 14, -7 10, -7 2 Z" fill="#f43f5e" />
+                <circle cx="0" cy="1" r="3.5" fill="#fde047" />
+              </g>
+            </svg>
+          </div>
+          <div class="mt-2">
+            <span class="text-xs uppercase tracking-[0.2em] text-purple-300">Mor Orkide</span>
+            <h3 class="font-serif italic text-2xl text-gold-light mt-1">Şefkat Dolu Kalbin İçin</h3>
+            <p class="flower-note hidden mt-3 text-sm text-ivory/85 font-light leading-relaxed border-t border-gold/20 pt-3">
+              Her bir öğrencini kendi canından bir parça gibi sahiplenen, incitmeden büyüten zarif yüreğin için...
+            </p>
+            <span class="flower-hint inline-block mt-3 text-xs text-ivory/50 group-hover:text-gold-light transition-colors">
+              Dokun ve Çiçeği Aç ✨
+            </span>
+          </div>
+        </button>
+
+        <!-- Çiçek 4: Sarı Lale -->
+        <button type="button"
+                data-flower-index="3"
+                class="flower-card glass-luxe rounded-3xl p-6 text-center flex flex-col items-center justify-between cursor-pointer focus:outline-none group">
+          <div class="flower-svg-wrapper flower-sway w-28 h-28 flex items-center justify-center my-2" style="animation-delay: 0.4s;">
+            <!-- Sanatsal Sarı Lale SVG -->
+            <svg viewBox="0 0 120 120" class="w-24 h-24 overflow-visible">
+              <defs>
+                <linearGradient id="tulipGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#fef08a" />
+                  <stop offset="55%" stop-color="#f59e0b" />
+                  <stop offset="100%" stop-color="#b45309" />
+                </linearGradient>
+              </defs>
+              <path d="M60 68 L60 114" stroke="#22c55e" stroke-width="3.8" stroke-linecap="round" />
+              <path d="M60 105 C42 90, 38 72, 46 66 C52 78, 57 92, 60 105 Z" fill="#22c55e" opacity="0.85" />
+              <path d="M60 100 C78 86, 82 70, 74 64 C68 76, 63 88, 60 100 Z" fill="#16a34a" opacity="0.85" />
+              <!-- Lale Çanağı -->
+              <path d="M40 36 C40 24, 52 20, 60 32 C68 20, 80 24, 80 36 C80 56, 70 68, 60 68 C50 68, 40 56, 40 36 Z" fill="url(#tulipGrad)" />
+              <path d="M48 34 C52 22, 68 22, 72 34 C72 52, 66 66, 60 68 C54 66, 48 52, 48 34 Z" fill="#fde047" opacity="0.65" />
+            </svg>
+          </div>
+          <div class="mt-2">
+            <span class="text-xs uppercase tracking-[0.2em] text-amber-300">Sarı Lale</span>
+            <h3 class="font-serif italic text-2xl text-gold-light mt-1">Geleceğe Dokunan Emeğin İçin</h3>
+            <p class="flower-note hidden mt-3 text-sm text-ivory/85 font-light leading-relaxed border-t border-gold/20 pt-3">
+              Bugün sınıfta attığın her tohumun yarın koca bir ormana dönüşeceğini bilerek verdiğin kutsal emek için...
+            </p>
+            <span class="flower-hint inline-block mt-3 text-xs text-ivory/50 group-hover:text-gold-light transition-colors">
+              Dokun ve Çiçeği Aç ✨
+            </span>
+          </div>
+        </button>
+
+        <!-- Çiçek 5: Papatya -->
+        <button type="button"
+                data-flower-index="4"
+                class="flower-card glass-luxe rounded-3xl p-6 text-center flex flex-col items-center justify-between cursor-pointer focus:outline-none group">
+          <div class="flower-svg-wrapper flower-sway w-28 h-28 flex items-center justify-center my-2" style="animation-delay: 0.9s;">
+            <!-- Sanatsal Papatya SVG -->
+            <svg viewBox="0 0 120 120" class="w-24 h-24 overflow-visible">
+              <path d="M60 64 Q57 90 60 114" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round" fill="none" />
+              <path d="M60 88 C45 83, 40 90, 48 96 C54 99, 59 93, 60 88 Z" fill="#22c55e" opacity="0.85" />
+              <g transform="translate(60,44)">
+                <ellipse cx="0" cy="-18" rx="5.5" ry="15" fill="#fffdf9" transform="rotate(0)" />
+                <ellipse cx="0" cy="-18" rx="5.5" ry="15" fill="#fffdf9" transform="rotate(30)" />
+                <ellipse cx="0" cy="-18" rx="5.5" ry="15" fill="#fffdf9" transform="rotate(60)" />
+                <ellipse cx="0" cy="-18" rx="5.5" ry="15" fill="#fffdf9" transform="rotate(90)" />
+                <ellipse cx="0" cy="-18" rx="5.5" ry="15" fill="#fffdf9" transform="rotate(120)" />
+                <ellipse cx="0" cy="-18" rx="5.5" ry="15" fill="#fffdf9" transform="rotate(150)" />
+                <ellipse cx="0" cy="-18" rx="5.5" ry="15" fill="#fffdf9" transform="rotate(180)" />
+                <ellipse cx="0" cy="-18" rx="5.5" ry="15" fill="#fffdf9" transform="rotate(210)" />
+                <ellipse cx="0" cy="-18" rx="5.5" ry="15" fill="#fffdf9" transform="rotate(240)" />
+                <ellipse cx="0" cy="-18" rx="5.5" ry="15" fill="#fffdf9" transform="rotate(270)" />
+                <ellipse cx="0" cy="-18" rx="5.5" ry="15" fill="#fffdf9" transform="rotate(300)" />
+                <ellipse cx="0" cy="-18" rx="5.5" ry="15" fill="#fffdf9" transform="rotate(330)" />
+                <circle cx="0" cy="0" r="9.5" fill="#f59e0b" />
+                <circle cx="-2" cy="-2" r="5" fill="#fde047" opacity="0.7" />
+              </g>
+            </svg>
+          </div>
+          <div class="mt-2">
+            <span class="text-xs uppercase tracking-[0.2em] text-yellow-200">Papatya</span>
+            <h3 class="font-serif italic text-2xl text-gold-light mt-1">Her Zaman Yanımda Olan Ablalığın İçin</h3>
+            <p class="flower-note hidden mt-3 text-sm text-ivory/85 font-light leading-relaxed border-t border-gold/20 pt-3">
+              Hayatın her mevsiminde sırtımı yasladığım en güvenli liman ve ilk öğretmenim olduğun için...
+            </p>
+            <span class="flower-hint inline-block mt-3 text-xs text-ivory/50 group-hover:text-gold-light transition-colors">
+              Dokun ve Çiçeği Aç ✨
+            </span>
+          </div>
+        </button>
+
+        <!-- Çiçek 6: Kardelen -->
+        <button type="button"
+                data-flower-index="5"
+                class="flower-card glass-luxe rounded-3xl p-6 text-center flex flex-col items-center justify-between cursor-pointer focus:outline-none group">
+          <div class="flower-svg-wrapper flower-sway w-28 h-28 flex items-center justify-center my-2" style="animation-delay: 1.4s;">
+            <!-- Sanatsal Kardelen SVG -->
+            <svg viewBox="0 0 120 120" class="w-24 h-24 overflow-visible">
+              <path d="M52 114 C50 82, 52 46, 66 36 C73 31, 78 36, 76 43" stroke="#4ade80" stroke-width="3.2" stroke-linecap="round" fill="none" />
+              <path d="M52 108 C42 86, 42 64, 48 56 C52 72, 52 90, 52 108 Z" fill="#22c55e" opacity="0.85" />
+              <!-- Zarif Eğik Kardelen Çiçeği -->
+              <g transform="translate(76, 44) rotate(22)">
+                <path d="M0 0 C-12 8, -14 22, -6 28 C-2 20, 0 10, 0 0 Z" fill="#f8fafc" />
+                <path d="M0 0 C12 8, 14 22, 6 28 C2 20, 0 10, 0 0 Z" fill="#f8fafc" />
+                <path d="M0 2 C-6 10, -5 21, 0 24 C5 21, 6 10, 0 2 Z" fill="#e0f2fe" />
+                <path d="M-3 19 Q0 22 3 19" stroke="#22c55e" stroke-width="2" fill="none" />
+              </g>
+            </svg>
+          </div>
+          <div class="mt-2">
+            <span class="text-xs uppercase tracking-[0.2em] text-sky-200">Kardelen</span>
+            <h3 class="font-serif italic text-2xl text-gold-light mt-1">İlham Veren Bilgeliğin İçin</h3>
+            <p class="flower-note hidden mt-3 text-sm text-ivory/85 font-light leading-relaxed border-t border-gold/20 pt-3">
+              En zor koşullarda bile umudu yeşerten duruşunla hem bana hem öğrencilerine ilham kaynağı olduğun için...
+            </p>
+            <span class="flower-hint inline-block mt-3 text-xs text-ivory/50 group-hover:text-gold-light transition-colors">
+              Dokun ve Çiçeği Aç ✨
+            </span>
+          </div>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- 6. KUTLAMA & HATIRA KARTI (CELEBRATION FIREWORKS & KEEPSAKE BADGE)  -->
+    <!-- =================================================================== -->
+    <section id="hatira" class="scroll-mt-24">
+      <div class="glass-luxe rounded-[2.2rem] p-7 sm:p-12 md:p-14 text-center relative overflow-hidden border-2 border-gold/40">
+        <!-- Üst Defne Tacı & Altın Madalya Rozeti -->
+        <div class="mx-auto w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-br from-gold-light via-gold to-gold-dark p-1 shadow-[0_0_45px_rgba(246,199,104,0.45)] flex items-center justify-center mb-6">
+          <div class="w-full h-full rounded-full bg-midnight/90 border border-gold/60 flex items-center justify-center">
+            <svg class="w-12 h-12 sm:w-14 sm:h-14 text-gold-light" viewBox="0 0 64 64" fill="none">
+              <!-- Defne Yaprakları & Yıldız -->
+              <path d="M22 48 C12 40, 10 26, 18 16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+              <path d="M42 48 C52 40, 54 26, 46 16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+              <path d="M15 36 L10 34 M14 28 L9 25 M16 21 L12 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              <path d="M49 36 L54 34 M50 28 L55 25 M48 21 L52 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              <path d="M32 18 L35.2 25.5 L43.3 26.3 L37.2 31.7 L39 39.7 L32 35.5 L25 39.7 L26.8 31.7 L20.7 26.3 L28.8 25.5 Z" fill="currentColor" />
+            </svg>
+          </div>
+        </div>
+
+        <span class="text-xs uppercase tracking-[0.35em] text-rosegold-light">Onur & Sevgi Beratı</span>
+
+        <h2 class="font-serif italic font-bold text-3xl sm:text-5xl text-gold-light mt-3 max-w-3xl mx-auto leading-tight">
+          Dünyanın En İyi Ablası ve En Değerli Öğretmeni
+        </h2>
+
+        <p class="mt-3 font-serif italic text-2xl sm:text-3xl text-ivory">
+          — <span id="certificateSisterName">Canım Ablam</span> —
+        </p>
+
+        <!-- Kişisel Özel Not Plaketi (Kullanıcı "Özel Not Ekle" ile burayı özelleştirebilir) -->
+        <div class="mt-7 max-w-xl mx-auto rounded-2xl bg-midnight/60 border border-gold/25 px-6 py-4">
+          <p id="customWishDisplay" class="font-serif italic text-lg sm:text-xl text-ivory/90 leading-relaxed">
+            “İyi ki varsın, iyi ki benim ablamsın ve iyi ki bu ülkenin çocuklarının öğretmenisin. Seni çok seviyorum!”
+          </p>
+          <p class="text-[11px] uppercase tracking-[0.25em] text-gold/70 mt-2">
+            24 Kasım Öğretmenler Günü Hatırası
+          </p>
+        </div>
+
+        <!-- Eylem Butonları -->
+        <div class="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <button id="launchFireworksBtn"
+                  type="button"
+                  class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full font-semibold text-sm sm:text-base text-midnight bg-gradient-to-r from-gold-light via-gold to-rosegold-light shadow-[0_10px_35px_rgba(246,199,104,0.38)] hover:shadow-[0_14px_45px_rgba(246,199,104,0.65)] hover:scale-105 active:scale-95 transition-all cursor-pointer">
+            <span>🎆 Kutlama Havai Fişekleri Başlat</span>
+          </button>
+
+          <button id="openWishModalBtn"
+                  type="button"
+                  class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full font-medium text-sm sm:text-base text-gold-light bg-white/5 hover:bg-white/10 border border-gold/40 transition-all cursor-pointer active:scale-95">
+            <span>💌 Özel Not Ekle</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Alt Bilgi (Footer) -->
+  <footer class="relative z-20 text-center pb-10 px-4 text-xs sm:text-sm text-ivory/50">
+    <p class="font-serif italic text-base text-gold-light/70">
+      Sonsuz sevgi ve minnetle hazırlandı • 24 Kasım Öğretmenler Günü
+    </p>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 1: ABLANIN ADINI YAZ (CANLI İSİM ÖZELLEŞTİRME)                  -->
+  <!-- ===================================================================== -->
+  <div id="nameModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-midnight/80 backdrop-blur-md">
+    <div class="glass-luxe rounded-3xl max-w-md w-full p-6 sm:p-8 relative animate-[fadeIn_0.25s_ease-out]">
+      <h3 class="font-serif italic text-2xl sm:text-3xl text-gold-light">
+        Ablanın Adını Yaz ✨
+      </h3>
+      <p class="text-sm text-ivory/75 mt-1.5 font-light">
+        Yazdığın isim başlıkta, mektupta ve hatıra kartında anında güncellenecektir.
+      </p>
+
+      <div class="mt-5">
+        <label for="sisterNameInput" class="block text-xs uppercase tracking-[0.2em] text-gold-light/80 mb-2">
+          Hitap veya İsim
+        </label>
+        <input id="sisterNameInput"
+               type="text"
+               maxlength="40"
+               placeholder="Örn: Canım Ablam Elif"
+               class="w-full px-4 py-3 rounded-xl bg-midnight/80 border border-gold/35 text-ivory placeholder-ivory/35 focus:outline-none focus:border-gold text-base" />
+
+        <!-- Hızlı Seçim Önerileri -->
+        <div class="flex flex-wrap gap-2 mt-3">
+          <button type="button" class="name-preset px-3 py-1 rounded-full text-xs bg-white/5 hover:bg-gold/20 border border-white/15 text-ivory/80 transition cursor-pointer">
+            Canım Ablam
+          </button>
+          <button type="button" class="name-preset px-3 py-1 rounded-full text-xs bg-white/5 hover:bg-gold/20 border border-white/15 text-ivory/80 transition cursor-pointer">
+            Biricik Ablam
+          </button>
+          <button type="button" class="name-preset px-3 py-1 rounded-full text-xs bg-white/5 hover:bg-gold/20 border border-white/15 text-ivory/80 transition cursor-pointer">
+            Canım Öğretmen Ablam
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-6 flex items-center justify-end gap-3">
+        <button id="closeNameModalBtn"
+                type="button"
+                class="px-5 py-2.5 rounded-full text-sm text-ivory/75 hover:text-ivory bg-white/5 hover:bg-white/10 transition cursor-pointer">
+          Vazgeç
+        </button>
+        <button id="saveNameBtn"
+                type="button"
+                class="px-6 py-2.5 rounded-full text-sm font-semibold text-midnight bg-gradient-to-r from-gold-light to-gold hover:brightness-110 transition cursor-pointer">
+          Uygula ✨
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 2: ÖZEL NOT EKLE (HATIRA KARTI İÇİN KISA DİLEK)                 -->
+  <!-- ===================================================================== -->
+  <div id="wishModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-midnight/80 backdrop-blur-md">
+    <div class="glass-luxe rounded-3xl max-w-md w-full p-6 sm:p-8 relative">
+      <h3 class="font-serif italic text-2xl sm:text-3xl text-gold-light">
+        Hatıra Kartına Özel Not Ekle 💌
+      </h3>
+      <p class="text-sm text-ivory/75 mt-1.5 font-light">
+        Ekran görüntüsü alıp ablanla paylaşabilmen için kartın üzerine kendi notunu yazabilirsin.
+      </p>
+
+      <div class="mt-5">
+        <textarea id="wishTextarea"
+                  rows="3"
+                  maxlength="220"
+                  placeholder="Ablana kalbinden geçen kısa bir kutlama mesajı yaz..."
+                  class="w-full px-4 py-3 rounded-xl bg-midnight/80 border border-gold/35 text-ivory placeholder-ivory/35 focus:outline-none focus:border-gold text-sm sm:text-base resize-none"></textarea>
+      </div>
+
+      <div class="mt-6 flex items-center justify-end gap-3">
+        <button id="closeWishModalBtn"
+                type="button"
+                class="px-5 py-2.5 rounded-full text-sm text-ivory/75 hover:text-ivory bg-white/5 hover:bg-white/10 transition cursor-pointer">
+          İptal
+        </button>
+        <button id="saveWishBtn"
+                type="button"
+                class="px-6 py-2.5 rounded-full text-sm font-semibold text-midnight bg-gradient-to-r from-gold-light to-rosegold-light hover:brightness-110 transition cursor-pointer">
+          Karta Ekle ✨
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- İNTERAKTİF MOTOR: CANVAS GÖRSEL ŞÖLENİ + WEB AUDIO AMBİYANS MELODİSİ   -->
+  <!-- ===================================================================== -->
+  <script>
+    (function () {
+      'use strict';
+
+      /* -------------------------------------------------------------------
+         1. WEB AUDIO API İLE YUMUŞAK MÜZİK KUTUSU / PİYANO AMBİYANSI
+      ------------------------------------------------------------------- */
+      let audioCtx = null;
+      let isMusicPlaying = false;
+      let melodyTimer = null;
+      let noteStep = 0;
+
+      // Huzur verici, duygusal pentatonik / majör 9 akor dizisi (Frekanslar Hz)
+      const soothingNotes = [
+        523.25, // C5
+        659.25, // E5
+        783.99, // G5
+        987.77, // B5
+        880.00, // A5
+        659.25, // E5
+        587.33, // D5
+        783.99, // G5
+        659.25, // E5
+        523.25, // C5
+        587.33, // D5
+        493.88, // B4
+      ];
+
+      function initAudioContext() {
+        if (!audioCtx) {
+          const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+          if (AudioContextClass) {
+            audioCtx = new AudioContextClass();
+          }
+        }
+        if (audioCtx && audioCtx.state === 'suspended') {
+          audioCtx.resume();
+        }
+      }
+
+      function playChimeNote(freq, duration = 2.6, volume = 0.055) {
+        if (!audioCtx || !isMusicPlaying) return;
+        try {
+          const now = audioCtx.currentTime;
+          const osc = audioCtx.createOscillator();
+          const overtone = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(freq, now);
+
+          // İnce kristal armonik katman
+          overtone.type = 'triangle';
+          overtone.frequency.setValueAtTime(freq * 2, now);
+
+          const overtoneGain = audioCtx.createGain();
+          overtoneGain.gain.setValueAtTime(0.14, now);
+
+          gain.gain.setValueAtTime(0.0001, now);
+          gain.gain.exponentialRampToValueAtTime(volume, now + 0.06);
+          gain.gain.exponentialRampToValueAtTime(0.0001, now + duration);
+
+          osc.connect(gain);
+          overtone.connect(overtoneGain);
+          overtoneGain.connect(gain);
+          gain.connect(audioCtx.destination);
+
+          osc.start(now);
+          overtone.start(now);
+          osc.stop(now + duration + 0.05);
+          overtone.stop(now + duration + 0.05);
+        } catch (e) {
+          // Ses politikası hatası olursa sessizce devam et
+        }
+      }
+
+      function playSparkleChime(index = 0) {
+        initAudioContext();
+        if (!audioCtx) return;
+        try {
+          const scale = [587.33, 659.25, 783.99, 880.00, 987.77, 1174.66];
+          const freq = scale[index % scale.length];
+          const now = audioCtx.currentTime;
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(freq, now);
+          gain.gain.setValueAtTime(0.001, now);
+          gain.gain.exponentialRampToValueAtTime(0.06, now + 0.03);
+          gain.gain.exponentialRampToValueAtTime(0.0001, now + 1.4);
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start(now);
+          osc.stop(now + 1.45);
+        } catch (e) {}
+      }
+
+      function updateSoundUI() {
+        const eqBars = document.getElementById('eqBars');
+        const statusText = document.getElementById('soundStatusText');
+        if (isMusicPlaying) {
+          eqBars.classList.add('eq-playing');
+          statusText.textContent = 'Melodi Açık';
+        } else {
+          eqBars.classList.remove('eq-playing');
+          statusText.textContent = 'Melodi Kapalı';
+        }
+      }
+
+      function startAmbientMelody() {
+        initAudioContext();
+        if (!audioCtx) return;
+        isMusicPlaying = true;
+        updateSoundUI();
+        if (melodyTimer) clearInterval(melodyTimer);
+
+        // İlk notayı hemen çal
+        playChimeNote(soothingNotes[noteStep % soothingNotes.length]);
+        noteStep++;
+
+        melodyTimer = setInterval(() => {
+          if (!isMusicPlaying) return;
+          playChimeNote(soothingNotes[noteStep % soothingNotes.length]);
+          noteStep++;
+        }, 1450);
+      }
+
+      function stopAmbientMelody() {
+        isMusicPlaying = false;
+        updateSoundUI();
+        if (melodyTimer) {
+          clearInterval(melodyTimer);
+          melodyTimer = null;
+        }
+      }
+
+      document.getElementById('soundToggleBtn').addEventListener('click', () => {
+        if (isMusicPlaying) {
+          stopAmbientMelody();
+        } else {
+          startAmbientMelody();
+        }
+      });
+
+      /* -------------------------------------------------------------------
+         2. TAM EKRAN HTML5 CANVAS GÖRSEL ŞÖLENİ (60 FPS)
+            - Altın Bokeh Küreleri & Yıldız Tozu
+            - Süzülen Gül & Altın Yaprakları
+            - Fare / Dokunma İzi Parıltıları
+            - Çok Aşamalı Havai Fişekler & Yükselen Dilek Fenerleri
+      ------------------------------------------------------------------- */
+      const canvas = document.getElementById('celebrationCanvas');
+      const ctx = canvas.getContext('2d');
+      let width = 0;
+      let height = 0;
+      let dpr = 1;
+
+      function resizeCanvas() {
+        dpr = Math.min(window.devicePixelRatio || 1, 2);
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = width * dpr;
+        canvas.height = height * dpr;
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      }
+
+      window.addEventListener('resize', resizeCanvas);
+      resizeCanvas();
+
+      // Parçacık Havuzları
+      const bokehOrbs = [];
+      const fallingPetals = [];
+      const cursorSparkles = [];
+      const fireworkRockets = [];
+      const fireworkParticles = [];
+      const skyLanterns = [];
+
+      const paletteColors = [
+        '#f6c768', // Radiant Gold
+        '#ffe4a3', // Soft Champagne Gold
+        '#ea8c9d', // Rose Gold
+        '#f7b8c4', // Blush Pink
+        '#fcf7ee', // Warm Ivory
+      ];
+
+      // Bokeh & Yıldız Tozu Başlatma
+      function initAmbientElements() {
+        bokehOrbs.length = 0;
+        fallingPetals.length = 0;
+
+        const orbCount = width < 640 ? 22 : 38;
+        for (let i = 0; i < orbCount; i++) {
+          bokehOrbs.push({
+            x: Math.random() * width,
+            y: Math.random() * height,
+            radius: 1.5 + Math.random() * 4.5,
+            vx: (Math.random() - 0.5) * 0.28,
+            vy: -0.15 - Math.random() * 0.35,
+            alpha: 0.25 + Math.random() * 0.55,
+            pulseSpeed: 0.015 + Math.random() * 0.025,
+            phase: Math.random() * Math.PI * 2,
+            color: paletteColors[i % paletteColors.length],
+          });
+        }
+
+        const petalCount = width < 640 ? 16 : 28;
+        for (let i = 0; i < petalCount; i++) {
+          fallingPetals.push(createPetal(true));
+        }
+      }
+
+      function createPetal(randomY = false) {
+        const isGold = Math.random() > 0.55;
+        return {
+          x: Math.random() * width,
+          y: randomY ? Math.random() * height : -20 - Math.random() * 60,
+          size: 5 + Math.random() * 6,
+          vy: 0.55 + Math.random() * 0.85,
+          swayAmp: 0.6 + Math.random() * 1.1,
+          swayFreq: 0.012 + Math.random() * 0.018,
+          phase: Math.random() * Math.PI * 2,
+          rotation: Math.random() * Math.PI * 2,
+          rotSpeed: (Math.random() - 0.5) * 0.03,
+          color: isGold ? 'rgba(246, 199, 104, 0.42)' : 'rgba(234, 140, 157, 0.42)',
+        };
+      }
+
+      initAmbientElements();
+
+      // Fare ve Dokunma İzi Parıltıları
+      function spawnSparkleTrail(x, y, count = 3) {
+        for (let i = 0; i < count; i++) {
+          cursorSparkles.push({
+            x: x + (Math.random() - 0.5) * 10,
+            y: y + (Math.random() - 0.5) * 10,
+            vx: (Math.random() - 0.5) * 1.4,
+            vy: (Math.random() - 0.5) * 1.4 - 0.4,
+            size: 1.5 + Math.random() * 2.5,
+            life: 1,
+            decay: 0.022 + Math.random() * 0.02,
+            color: paletteColors[Math.floor(Math.random() * paletteColors.length)],
+          });
+        }
+      }
+
+      window.addEventListener('mousemove', (e) => {
+        spawnSparkleTrail(e.clientX, e.clientY, 2);
+      });
+
+      window.addEventListener('touchmove', (e) => {
+        if (e.touches && e.touches[0]) {
+          spawnSparkleTrail(e.touches[0].clientX, e.touches[0].clientY, 2);
+        }
+      }, { passive: true });
+
+      // Havai Fişek Patlaması Oluşturucu
+      function createFireworkBurst(x, y, particleCount = 65) {
+        const baseColor = paletteColors[Math.floor(Math.random() * paletteColors.length)];
+        const secondaryColor = paletteColors[Math.floor(Math.random() * paletteColors.length)];
+
+        for (let i = 0; i < particleCount; i++) {
+          const angle = (Math.PI * 2 * i) / particleCount + (Math.random() - 0.5) * 0.15;
+          const speed = 1.6 + Math.random() * 4.8;
+          fireworkParticles.push({
+            x,
+            y,
+            vx: Math.cos(angle) * speed,
+            vy: Math.sin(angle) * speed,
+            gravity: 0.045,
+            drag: 0.965,
+            size: 1.8 + Math.random() * 2.4,
+            life: 1,
+            decay: 0.012 + Math.random() * 0.012,
+            color: i % 2 === 0 ? baseColor : secondaryColor,
+          });
+        }
+      }
+
+      function launchRocket(targetX, targetY) {
+        const startX = targetX + (Math.random() - 0.5) * 120;
+        fireworkRockets.push({
+          x: startX,
+          y: height + 10,
+          targetY,
+          vx: (targetX - startX) * 0.02,
+          vy: -8.5 - Math.random() * 3.5,
+          color: '#ffe4a3',
+        });
+      }
+
+      // Yükselen Sıcak Dilek Feneri (Sky Lantern)
+      function spawnSkyLantern() {
+        skyLanterns.push({
+          x: width * (0.1 + Math.random() * 0.8),
+          y: height + 40,
+          vy: -0.7 - Math.random() * 0.65,
+          swayPhase: Math.random() * Math.PI * 2,
+          scale: 0.65 + Math.random() * 0.55,
+          alpha: 0.85,
+        });
+      }
+
+      // Büyük Kutlama Koreografisi (Havai Fişekler + Dilek Fenerleri)
+      function triggerGrandCelebration() {
+        // 6 ardışık havai fişek dalgası
+        for (let i = 0; i < 7; i++) {
+          setTimeout(() => {
+            const rx = width * (0.15 + Math.random() * 0.7);
+            const ry = height * (0.14 + Math.random() * 0.34);
+            launchRocket(rx, ry);
+          }, i * 360);
+        }
+
+        // 8 sıcak dilek feneri gökyüzüne bırak
+        for (let j = 0; j < 8; j++) {
+          setTimeout(() => {
+            spawnSkyLantern();
+          }, j * 420);
+        }
+      }
+
+      // Ana 60fps Animasyon Döngüsü
+      function animateCanvas() {
+        ctx.clearRect(0, 0, width, height);
+
+        // 1. Bokeh & Yıldız Tozu
+        for (let i = 0; i < bokehOrbs.length; i++) {
+          const orb = bokehOrbs[i];
+          orb.x += orb.vx;
+          orb.y += orb.vy;
+          orb.phase += orb.pulseSpeed;
+
+          if (orb.y < -15) orb.y = height + 15;
+          if (orb.x < -15) orb.x = width + 15;
+          if (orb.x > width + 15) orb.x = -15;
+
+          const currentAlpha = orb.alpha * (0.65 + 0.35 * Math.sin(orb.phase));
+          ctx.save();
+          ctx.globalAlpha = currentAlpha;
+          ctx.shadowBlur = 12;
+          ctx.shadowColor = orb.color;
+          ctx.fillStyle = orb.color;
+          ctx.beginPath();
+          ctx.arc(orb.x, orb.y, orb.radius, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.restore();
+        }
+
+        // 2. Süzülen Gül & Altın Yaprakları
+        for (let i = 0; i < fallingPetals.length; i++) {
+          const p = fallingPetals[i];
+          p.phase += p.swayFreq;
+          p.x += Math.sin(p.phase) * p.swayAmp;
+          p.y += p.vy;
+          p.rotation += p.rotSpeed;
+
+          if (p.y > height + 25) {
+            fallingPetals[i] = createPetal(false);
+            continue;
+          }
+
+          ctx.save();
+          ctx.translate(p.x, p.y);
+          ctx.rotate(p.rotation);
+          ctx.fillStyle = p.color;
+          ctx.beginPath();
+          ctx.moveTo(0, -p.size);
+          ctx.bezierCurveTo(p.size, -p.size * 0.5, p.size, p.size * 0.7, 0, p.size);
+          ctx.bezierCurveTo(-p.size, p.size * 0.7, -p.size, -p.size * 0.5, 0, -p.size);
+          ctx.fill();
+          ctx.restore();
+        }
+
+        // 3. Yükselen Sıcak Dilek Fenerleri
+        for (let i = skyLanterns.length - 1; i >= 0; i--) {
+          const l = skyLanterns[i];
+          l.y += l.vy;
+          l.swayPhase += 0.02;
+          const lx = l.x + Math.sin(l.swayPhase) * 14;
+
+          if (l.y < -80) {
+            skyLanterns.splice(i, 1);
+            continue;
+          }
+
+          ctx.save();
+          ctx.translate(lx, l.y);
+          ctx.scale(l.scale, l.scale);
+
+          // Dış sıcak hale
+          const glow = ctx.createRadialGradient(0, 0, 2, 0, 0, 34);
+          glow.addColorStop(0, 'rgba(255, 228, 163, 0.85)');
+          glow.addColorStop(0.5, 'rgba(246, 158, 78, 0.32)');
+          glow.addColorStop(1, 'rgba(246, 158, 78, 0)');
+          ctx.fillStyle = glow;
+          ctx.beginPath();
+          ctx.arc(0, 0, 34, 0, Math.PI * 2);
+          ctx.fill();
+
+          // Fener gövdesi
+          ctx.fillStyle = 'rgba(255, 212, 130, 0.9)';
+          ctx.beginPath();
+          ctx.moveTo(-10, -14);
+          ctx.lineTo(10, -14);
+          ctx.lineTo(7, 12);
+          ctx.lineTo(-7, 12);
+          ctx.closePath();
+          ctx.fill();
+
+          // İç alev çekirdeği
+          ctx.fillStyle = '#fffbeb';
+          ctx.beginPath();
+          ctx.arc(0, 5, 3.2, 0, Math.PI * 2);
+          ctx.fill();
+
+          ctx.restore();
+        }
+
+        // 4. Havai Fişek Roketleri
+        for (let i = fireworkRockets.length - 1; i >= 0; i--) {
+          const r = fireworkRockets[i];
+          r.x += r.vx;
+          r.y += r.vy;
+          r.vy += 0.12;
+
+          ctx.save();
+          ctx.fillStyle = r.color;
+          ctx.shadowBlur = 10;
+          ctx.shadowColor = '#f6c768';
+          ctx.beginPath();
+          ctx.arc(r.x, r.y, 2.5, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.restore();
+
+          if (r.vy >= -1.2 || r.y <= r.targetY) {
+            createFireworkBurst(r.x, r.y, 70);
+            fireworkRockets.splice(i, 1);
+          }
+        }
+
+        // 5. Havai Fişek Parçacıkları
+        for (let i = fireworkParticles.length - 1; i >= 0; i--) {
+          const fp = fireworkParticles[i];
+          fp.vx *= fp.drag;
+          fp.vy *= fp.drag;
+          fp.vy += fp.gravity;
+          fp.x += fp.vx;
+          fp.y += fp.vy;
+          fp.life -= fp.decay;
+
+          if (fp.life <= 0) {
+            fireworkParticles.splice(i, 1);
+            continue;
+          }
+
+          ctx.save();
+          ctx.globalAlpha = fp.life;
+          ctx.fillStyle = fp.color;
+          ctx.shadowBlur = 8;
+          ctx.shadowColor = fp.color;
+          ctx.beginPath();
+          ctx.arc(fp.x, fp.y, fp.size * fp.life, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.restore();
+        }
+
+        // 6. Fare & Dokunma İzi Parıltıları
+        for (let i = cursorSparkles.length - 1; i >= 0; i--) {
+          const sp = cursorSparkles[i];
+          sp.x += sp.vx;
+          sp.y += sp.vy;
+          sp.life -= sp.decay;
+
+          if (sp.life <= 0) {
+            cursorSparkles.splice(i, 1);
+            continue;
+          }
+
+          ctx.save();
+          ctx.globalAlpha = sp.life;
+          ctx.fillStyle = sp.color;
+          ctx.beginPath();
+          ctx.arc(sp.x, sp.y, sp.size * sp.life, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.restore();
+        }
+
+        requestAnimationFrame(animateCanvas);
+      }
+
+      /* -------------------------------------------------------------------
+         3. AÇILIŞ SAHNESİ (BALMUMU MÜHÜR & SÜRPRİZİ AÇ)
+      ------------------------------------------------------------------- */
+      const introOverlay = document.getElementById('introOverlay');
+      const openSurpriseBtn = document.getElementById('openSurpriseBtn');
+      const waxSealClickArea = document.getElementById('waxSealClickArea');
+
+      function revealMainExperience() {
+        // Altın patlama efekti oluştur
+        createFireworkBurst(width / 2, height / 2, 95);
+        setTimeout(() => {
+          createFireworkBurst(width * 0.28, height * 0.32, 65);
+          createFireworkBurst(width * 0.72, height * 0.32, 65);
+        }, 280);
+
+        // 4 dilek feneri bırak
+        for (let i = 0; i < 4; i++) {
+          setTimeout(spawnSkyLantern, i * 450);
+        }
+
+        // Huzurlu melodiyi başlat
+        startAmbientMelody();
+
+        // Açılış perdesini zarifçe kaldır
+        introOverlay.classList.add('opacity-0', 'scale-105', 'pointer-events-none');
+        setTimeout(() => {
+          introOverlay.style.display = 'none';
+        }, 1050);
+      }
+
+      openSurpriseBtn.addEventListener('click', revealMainExperience);
+      waxSealClickArea.addEventListener('click', revealMainExperience);
+
+      /* -------------------------------------------------------------------
+         4. CANLI İSİM ÖZELLEŞTİRME MODALI
+      ------------------------------------------------------------------- */
+      const nameModal = document.getElementById('nameModal');
+      const sisterNameInput = document.getElementById('sisterNameInput');
+      const heroSisterName = document.getElementById('heroSisterName');
+      const letterSisterName = document.getElementById('letterSisterName');
+      const letterInlineName = document.getElementById('letterInlineName');
+      const certificateSisterName = document.getElementById('certificateSisterName');
+
+      let currentSisterName = 'Canım Ablam';
+
+      function applySisterName(rawName) {
+        const cleaned = (rawName || '').trim() || 'Canım Ablam';
+        currentSisterName = cleaned;
+        heroSisterName.textContent = cleaned;
+        letterSisterName.textContent = cleaned;
+        letterInlineName.textContent = cleaned.toLocaleLowerCase('tr-TR');
+        certificateSisterName.textContent = cleaned;
+      }
+
+      document.getElementById('openNameModalBtn').addEventListener('click', () => {
+        sisterNameInput.value = currentSisterName;
+        nameModal.classList.remove('hidden');
+        nameModal.classList.add('flex');
+        setTimeout(() => sisterNameInput.focus(), 60);
+      });
+
+      document.getElementById('closeNameModalBtn').addEventListener('click', () => {
+        nameModal.classList.add('hidden');
+        nameModal.classList.remove('flex');
+      });
+
+      document.getElementById('saveNameBtn').addEventListener('click', () => {
+        applySisterName(sisterNameInput.value);
+        nameModal.classList.add('hidden');
+        nameModal.classList.remove('flex');
+        createFireworkBurst(width / 2, height * 0.25, 50);
+      });
+
+      sisterNameInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          applySisterName(sisterNameInput.value);
+          nameModal.classList.add('hidden');
+          nameModal.classList.remove('flex');
+        }
+      });
+
+      document.querySelectorAll('.name-preset').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          sisterNameInput.value = btn.textContent.trim();
+        });
+      });
+
+      /* -------------------------------------------------------------------
+         5. İNTERAKTİF ÇİÇEK BUKETİ (BLOOMING GARDEN)
+      ------------------------------------------------------------------- */
+      const flowerCards = document.querySelectorAll('.flower-card');
+
+      function bloomSingleFlower(card, index, clientX, clientY) {
+        const wasBloomed = card.classList.contains('bloomed');
+        card.classList.add('bloomed');
+        const note = card.querySelector('.flower-note');
+        const hint = card.querySelector('.flower-hint');
+        if (note) note.classList.remove('hidden');
+        if (hint) hint.textContent = 'Sevgiyle Açıldı 🌸';
+
+        if (!wasBloomed) {
+          playSparkleChime(index);
+          const rect = card.getBoundingClientRect();
+          const burstX = clientX || rect.left + rect.width / 2;
+          const burstY = clientY || rect.top + rect.height / 2;
+          spawnSparkleTrail(burstX, burstY, 16);
+        }
+      }
+
+      flowerCards.forEach((card) => {
+        card.addEventListener('click', (e) => {
+          const idx = parseInt(card.getAttribute('data-flower-index') || '0', 10);
+          bloomSingleFlower(card, idx, e.clientX, e.clientY);
+        });
+      });
+
+      document.getElementById('bloomAllBtn').addEventListener('click', () => {
+        flowerCards.forEach((card, idx) => {
+          setTimeout(() => {
+            bloomSingleFlower(card, idx);
+          }, idx * 180);
+        });
+      });
+
+      /* -------------------------------------------------------------------
+         6. KUTLAMA HAVAİ FİŞEKLERİ & ÖZEL NOT EKLEME MODALI
+      ------------------------------------------------------------------- */
+      document.getElementById('launchFireworksBtn').addEventListener('click', () => {
+        triggerGrandCelebration();
+        if (!isMusicPlaying) {
+          startAmbientMelody();
+        }
+      });
+
+      const wishModal = document.getElementById('wishModal');
+      const wishTextarea = document.getElementById('wishTextarea');
+      const customWishDisplay = document.getElementById('customWishDisplay');
+
+      document.getElementById('openWishModalBtn').addEventListener('click', () => {
+        wishTextarea.value = customWishDisplay.textContent.replace(/^[“"]|[”"]$/g, '');
+        wishModal.classList.remove('hidden');
+        wishModal.classList.add('flex');
+        setTimeout(() => wishTextarea.focus(), 60);
+      });
+
+      document.getElementById('closeWishModalBtn').addEventListener('click', () => {
+        wishModal.classList.add('hidden');
+        wishModal.classList.remove('flex');
+      });
+
+      document.getElementById('saveWishBtn').addEventListener('click', () => {
+        const val = wishTextarea.value.trim();
+        if (val) {
+          customWishDisplay.textContent = `“${val}”`;
+        }
+        wishModal.classList.add('hidden');
+        wishModal.classList.remove('flex');
+        spawnSparkleTrail(width / 2, height * 0.65, 22);
+      });
+
+      // Pencere yüklendiğinde animasyon döngüsünü başlat
+      window.addEventListener('load', () => {
+        animateCanvas();
+      });
+    })();
+  </script>
+</body>
+</html>
